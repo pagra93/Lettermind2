@@ -1,0 +1,197 @@
+<ion-header class="bg_transparent">
+	<ion-toolbar>
+		<ion-title>
+			<span class="ion-float-start" (click)="dismiss()">
+				<ion-icon class="zmdi zmdi-chevron-down ion-text-start"></ion-icon>
+			</span>
+			<span class="ion-float-end">
+				<ion-icon class="zmdi zmdi-more ion-text-end"></ion-icon>
+			</span>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen [ngClass]="fabAction ? 'active' : ''">
+	<div class="banner">
+		<div class="banner_img center_img">
+			<img src="assets/images/song_img2.png" class="crop_img">
+		</div>
+		<div class="banner_details">
+			<h6 (click)="toggleFab()">{{'play_lyrics' | translate}}</h6>
+			<div class="lyrics">
+				<h5>It was such a great.</h5>
+				<h5 class="active">Loving you was my only trait,</h5>
+				<h5>Until my Last breath</h5>
+			</div>
+			<div class="text_box">
+				<h2>Last breath</h2>
+				<p>Holiday | Adams Terena</p>
+			</div>
+			<ion-row>
+				<ion-col size="2" class="ion-text-start">
+					<ion-icon class="zmdi zmdi-favorite-outline"></ion-icon>
+				</ion-col>
+				<ion-col size="8" class="play_push_btn_box d-flex">
+					<ion-icon class="zmdi zmdi-fast-rewind ion-text-start"></ion-icon>
+
+					<ion-icon class="zmdi zmdi-play-circle play_push_btn"></ion-icon>
+
+					<ion-icon class="zmdi zmdi-fast-forward ion-text-end end"></ion-icon>
+				</ion-col>
+				<ion-col size="2" class="ion-text-end">
+					<ion-icon class="zmdi zmdi-playlist-audio"></ion-icon>
+				</ion-col>
+			</ion-row>
+
+			<div class="song_time_seeking">
+				<h3 class="d-flex">02:33
+					<span class="end">05:10</span>
+				</h3>
+				<!--
+				<div class="seeking">
+					<div class="seeking_activated" style="width: 50%;"></div>
+				</div>
+-->
+				<ion-range min="-100" ></ion-range>
+			</div>
+
+		</div>
+	</div>
+</ion-content>
+
+<ion-footer no-border [ngClass]="fabAction ? 'active' : ''">
+	<div class="header" (click)="toggleFab()"></div>
+	<h4 class="d-flex">{{'coming_up_next' | translate}} <span class="end">{{'shuffle' | translate}} <ion-icon class="zmdi zmdi-shuffle ion-text-end"></ion-icon></span></h4>
+	<ion-list lines="none">
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/song_img.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Like the way you look</h2>
+					<h5 class="d-flex">Last love | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/song_img2.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al1.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Say Hello & Goodbye</h2>
+					<h5 class="d-flex"> Hard Feelings | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al4.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Like the way you loolk</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al3.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al2.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al5.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al6.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+	</ion-list>
+
+
+</ion-footer>

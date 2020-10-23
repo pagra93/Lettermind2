@@ -1,0 +1,269 @@
+<ion-header class="bg_transparent">
+	<ion-toolbar>
+	<ion-buttons slot="start">
+			<ion-back-button  text=""  icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			<span class="ion-float-end">
+				<ion-icon class="zmdi zmdi-more-vert ion-text-end"></ion-icon>
+			</span>
+		</ion-title>
+	</ion-toolbar>
+	<div class="banner">
+		<div class="banner_img center_img">
+			<img src="assets/images/artist_banner_img.png" class="crop_img">
+		</div>
+		<div class="banner_details">
+			<div class="text_box">
+				<h2>Abd Resol</h2>
+				<p>1,22,145 {{'followers' | translate}}</p>
+			</div>
+			<ion-row>
+				<ion-col size="6">
+					<ion-button fill="outline" class="btn following">
+						<ion-icon slot="start" class="zmdi zmdi-check"></ion-icon>
+						{{'following' | translate}}
+					</ion-button>
+				</ion-col>
+				<ion-col size="6">
+					<ion-button size="large" class="btn">{{'shuffle_all' | translate}}</ion-button>
+				</ion-col>
+			</ion-row>
+
+		</div>
+	</div>
+	<ion-segment [(ngModel)]="tab" lines="none">
+		<ion-segment-button value="songs">
+			<ion-label>
+				{{'songs' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="about">
+			<ion-label>
+				{{'about' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="stories">
+			<ion-label>
+				{{'stories' | translate}}
+			</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+</ion-header>
+
+<ion-content class="bg_color">
+
+	<div class="tab_container" [ngSwitch]="tab">
+
+		<ion-list lines="none" *ngSwitchCase="'songs'">
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you loolk</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="option()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+
+
+
+		<ion-list lines="none" *ngSwitchCase="'about'">
+			<div class="container">
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+				<div class="text-box">
+					<h2>Abd Resol</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+			</div>
+		</ion-list>
+
+
+		<ion-list lines="none" *ngSwitchCase="'stories'">
+			<div class="container">
+				<div class="text-box">
+					<h2>Lorem Ipsum</h2>
+					<p>
+
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+					</p>
+				</div>
+
+			</div>
+		</ion-list>
+	</div>
+</ion-content>

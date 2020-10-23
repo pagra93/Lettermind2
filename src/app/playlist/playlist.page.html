@@ -1,0 +1,569 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>
+			{{'my_collection' | translate}}
+			<span class="ion-float-end">
+				<ion-icon class="zmdi zmdi-search ion-text-end"></ion-icon>
+			</span>
+		</ion-title>
+	</ion-toolbar>
+	<ion-segment [(ngModel)]="tab" lines="none" >
+		<ion-segment-button value="my_playlists" >
+			<ion-label >
+				{{'my_playlists' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="album">
+			<ion-label>
+				{{'album' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="aritst">
+			<ion-label>
+				{{'aritst' | translate}}
+			</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+	<div class="tab_container" [ngSwitch]="tab">
+
+		<!-- 	My Playlists list start -->
+		<ion-list lines="none" *ngSwitchCase="'my_playlists'">
+			<ion-item class="create_playlist" (click)="createPlaylist()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<ion-icon class="zmdi zmdi-plus"></ion-icon>
+					</div>
+
+					<div class="item_detail">
+						<h2>{{'create_playlist' | translate}}</h2>
+						<h5>{{'add_name_select_songs' | translate}}</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Liked Song</h2>
+						<h5 class="d-flex">15 Songs</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hip Hopper</h2>
+						<h5 class="d-flex">26 Songs <span class="end">Private</span></h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img3.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img4.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Retro Hits</h2>
+						<h5 class="d-flex">55 Songs <span class="end">1142 Listened</span></h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hip Hopper</h2>
+						<h5 class="d-flex">26 Songs <span class="end">248 Listened</span></h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Liked Song</h2>
+						<h5 class="d-flex">15 Songs</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hip Hopper</h2>
+						<h5 class="d-flex">26 Songs <span class="end">Private</span></h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img3.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img4.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Retro Hits</h2>
+						<h5 class="d-flex">55 Songs <span class="end">1142 Listened</span></h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="play_list_song()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hip Hopper</h2>
+						<h5 class="d-flex">26 Songs <span class="end">248 Listened</span></h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+		<!-- My Playlists list end -->
+
+
+
+		<!-- Album list start -->
+		<ion-list class="album_list" lines="none" *ngSwitchCase="'album'">
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last Love</h2>
+						<h5 class="d-flex">Elvis Johnson</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hostages</h2>
+						<h5 class="d-flex">Pater Willy</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Blood Warmer</h2>
+						<h5 class="d-flex">Elvis Johnson</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Shy Brid Album</h2>
+						<h5 class="d-flex">Limova George</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last Call</h2>
+						<h5 class="d-flex">Elvina Rose</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last Love</h2>
+						<h5 class="d-flex">Elvis Johnson</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Hostages</h2>
+						<h5 class="d-flex">Pater Willy</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Blood Warmer</h2>
+						<h5 class="d-flex">Elvis Johnson</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Shy Brid Album</h2>
+						<h5 class="d-flex">Limova George</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="albumSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/album3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last Call</h2>
+						<h5 class="d-flex">Elvina Rose</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+
+		<!-- Album list end -->
+
+
+		<!-- Artist list start -->
+		<ion-list class="artist_list" lines="none" *ngSwitchCase="'aritst'">
+			<ion-item (click)="add_new_artist()" class="add_new_artist">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<ion-icon class="zmdi zmdi-plus"></ion-icon>
+						</div>
+					</div>
+					<div class="item_detail">
+						<h2>{{'add_new_artist' | translate}}</h2>
+					</div>
+				</div>
+			</ion-item>
+
+
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Abd Resol</h2>
+						<h5 class="d-flex">1,22,145 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Aks Williamson</h2>
+						<h5 class="d-flex">4,82,187 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Bohen Hesion</h2>
+						<h5 class="d-flex">3,22,148 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Bumalo Pajero</h2>
+						<h5 class="d-flex">8,92,185 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Adams Terena</h2>
+						<h5 class="d-flex">2,78,177 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Afro Jacks</h2>
+						<h5 class="d-flex">1,22,145 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+				<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Abd Resol</h2>
+						<h5 class="d-flex">1,22,145 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Aks Williamson</h2>
+						<h5 class="d-flex">4,82,187 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Bohen Hesion</h2>
+						<h5 class="d-flex">3,22,148 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Bumalo Pajero</h2>
+						<h5 class="d-flex">8,92,185 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Adams Terena</h2>
+						<h5 class="d-flex">2,78,177 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item (click)="artistSong()">
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/img6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Afro Jacks</h2>
+						<h5 class="d-flex">1,22,145 Followers</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+		<!-- Artist list end -->
+	</div>
+</ion-content>

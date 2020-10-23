@@ -1,0 +1,819 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button  text=""  icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'add_song' | translate}}
+			<span class="ion-float-end">{{'done' | translate}}</span>
+		</ion-title>
+	</ion-toolbar>
+	<ion-segment [(ngModel)]="tab" lines="none">
+		<ion-segment-button value="search">
+			<ion-label>
+				{{'search' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="you_liked">
+			<ion-label>
+				{{'you_liked' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="recentil_played">
+			<ion-label>
+				{{'recentil_played' | translate}}
+			</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+</ion-header>
+<ion-content class="bg_color">
+	<div class="tab_container" [ngSwitch]="tab">
+		<ion-list lines="none" *ngSwitchCase="'search'">
+			<div class="search_box d-flex">
+				<ion-icon class="zmdi zmdi-search"></ion-icon>
+				<ion-searchbar class="ion-no-padding" searchIcon="hide" placeholder="{{'search_song' | translate}}"></ion-searchbar>
+			</div>
+
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+
+
+
+		<ion-list lines="none" *ngSwitchCase="'you_liked'">
+
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+
+
+
+
+		<ion-list lines="none" *ngSwitchCase="'recentil_played'">
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al5.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>La La Love li li Live</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al6.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al1.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Say Hello & Goodbye</h2>
+						<h5 class="d-flex"> Hard Feelings | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al4.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>No Love No Way</h2>
+						<h5 class="d-flex"> Last Love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/al3.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Love is new hate</h2>
+						<h5 class="d-flex"> Holiday | Peter Kekky
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Like the way you look</h2>
+						<h5 class="d-flex">Last love | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+			<ion-item>
+				<div class="item_container d-flex">
+					<div class="img_container">
+						<div class="img_box center_img">
+							<img src="assets/images/song_img2.png" class="crop_img">
+						</div>
+					</div>
+
+					<div class="item_detail">
+						<h2>Last breath</h2>
+						<h5 class="d-flex"> Holiday | Adverd Johny
+							<ion-icon class="zmdi zmdi-plus-circle-o end ion-text-end"></ion-icon>
+						</h5>
+					</div>
+				</div>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>

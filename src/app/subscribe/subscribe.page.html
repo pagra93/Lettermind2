@@ -1,0 +1,50 @@
+<ion-header>
+	<ion-toolbar>
+	<ion-buttons slot="start">
+			<ion-back-button  text=""  icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'subscribe' | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_color">
+	<ion-list lines="none">
+		<ion-item (click)="payment()">
+			<div class="item_container">
+				<p class="d-flex">Starter Pack <span class="end">{{'more_info' | translate}} <sub>></sub></span></p>
+				<h2 class="d-flex">3 Month <span class="end">$9.99</span></h2>
+			</div>
+		</ion-item>
+		<ion-item (click)="payment()">
+			<div class="item_container">
+				<p class="d-flex">Starter Pack <span class="end">{{'more_info' | translate}} <sub>></sub></span></p>
+				<h2 class="d-flex">6 Month <span class="end">$14.99</span></h2>
+			</div>
+		</ion-item>
+		<ion-item (click)="payment()">
+			<div class="item_container">
+				<p class="d-flex">Starter Pack <span class="end">{{'more_info' | translate}} <sub>></sub></span></p>
+				<h2 class="d-flex">12 Month <span class="end">$23.99</span></h2>
+			</div>
+		</ion-item>
+	</ion-list>
+	<div class="subscription_allows">
+		<h2>{{'subscription_allows' | translate}}</h2>
+		<p class="d-flex">
+			<ion-icon class="zmdi zmdi-check-circle text-start"></ion-icon>
+			Download unlimaited song
+		</p>
+		<p class="d-flex">
+			<ion-icon class="zmdi zmdi-check-circle text-start"></ion-icon>
+			View song lyrics while playing song
+		</p>
+		<p class="d-flex">
+			<ion-icon class="zmdi zmdi-check-circle text-start"></ion-icon>
+			Hight Quality sound quality
+		</p>
+		<p class="d-flex">
+			<ion-icon class="zmdi zmdi-check-circle text-start"></ion-icon>
+			Ad free song play
+		</p>
+	</div>
+</ion-content>

@@ -1,0 +1,169 @@
+<ion-header class="bg_transparent">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button  text=""  icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			<span class="ion-float-end">
+				<ion-icon class="zmdi zmdi-more-vert ion-text-end"></ion-icon>
+			</span>
+		</ion-title>
+	</ion-toolbar>
+	<div class="banner">
+		<div class="banner_img center_img">
+			<img src="assets/images/song_img.png" class="crop_img">
+		</div>
+		<div class="banner_details">
+			<div class="text_box">
+				<h2>Retro Hits</h2>
+				<p>By Samantha Smith</p>
+			</div>
+			<ion-button size="large" class="btn">{{'shuffle_play' | translate}}</ion-button>
+		</div>
+	</div>
+</ion-header>
+
+<ion-content class="bg_color">
+	<ion-list lines="none">
+		<ion-item (click)="add_song()" class="add_new_artist">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<ion-icon class="zmdi zmdi-plus"></ion-icon>
+				</div>
+				<div class="item_detail">
+					<h2>{{'add_song' | translate}}</h2>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/song_img.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Like the way you look</h2>
+					<h5 class="d-flex">Last  love | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/song_img2.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al1.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Say Hello & Goodbye</h2>
+					<h5 class="d-flex"> Hard Feelings | Adverd Johny
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al4.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Like the way you loolk</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al3.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al2.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al5.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+				<ion-item (click)="option()">
+			<div class="item_container d-flex">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/al6.png" class="crop_img">
+					</div>
+				</div>
+
+				<div class="item_detail">
+					<h2>Last breath</h2>
+					<h5 class="d-flex"> Holiday | Adverd Johny 
+						<ion-icon class="zmdi zmdi-more end ion-text-end"></ion-icon>
+					</h5>
+				</div>
+			</div>
+		</ion-item>
+		
+	</ion-list>
+</ion-content>

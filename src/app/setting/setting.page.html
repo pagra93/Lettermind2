@@ -1,0 +1,117 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'account' | translate}}</ion-title>
+	</ion-toolbar>
+	<h1 (click)="subscribe()">{{'upgrade_to_musicvic_premium' | translate}}</h1>
+	<ion-segment [(ngModel)]="tab" lines="none">
+		<ion-segment-button value="settigs">
+			<ion-label>
+				{{'settigs' | translate}}
+			</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="profile">
+			<ion-label>
+				{{'profile' | translate}}
+			</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+</ion-header>
+
+<ion-content class="bg_color">
+	<div class="tab_container form" [ngSwitch]="tab">
+		<ion-list lines="none" *ngSwitchCase="'settigs'">
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'audio_quality' | translate}}</ion-label>
+				<ion-select placeholder="{{'select_one' | translate}}" interface="action-sheet">
+					<ion-select-option selected value="hd" selected-text>{{'hd' | translate}}</ion-select-option>
+					<ion-select-option value="High">{{'high' | translate}}</ion-select-option>
+					<ion-select-option value="Medium">{{'medium' | translate}}</ion-select-option>
+					<ion-select-option value="Low">{{'low' | translate}}</ion-select-option>
+				</ion-select>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'preferred_app_language' | translate}}</ion-label>
+				<ion-select placeholder="{{'select_one' | translate}}" interface="action-sheet">
+					<ion-select-option selected value="English" selected-text>English (USA)</ion-select-option>
+					<ion-select-option value="Spanish">Spanish</ion-select-option>
+					<ion-select-option value="Arabic">Arabic</ion-select-option>
+					<ion-select-option value="Russian">Russian</ion-select-option>
+				</ion-select>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'lyrics_in' | translate}}</ion-label>
+				<ion-select placeholder="{{'select_one' | translate}}" interface="action-sheet">
+					<ion-select-option selected value="English" selected-text>English</ion-select-option>
+					<ion-select-option value="Spanish">Spanish</ion-select-option>
+					<ion-select-option value="Arabic">Arabic</ion-select-option>
+					<ion-select-option value="Russian">Russian</ion-select-option>
+				</ion-select>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'downloads' | translate}}</ion-label>
+				<ion-select placeholder="{{'select_one' | translate}}" interface="action-sheet">
+					<ion-select-option selected value="WiFi" selected-text>{{'WiFi_Only' | translate}}
+					</ion-select-option>
+					<ion-select-option value="mobile_data">{{'mobile_data_only' | translate}} </ion-select-option>
+					<ion-select-option value="mobile_data_wifi">{{'mobile_data_or_WiFi' | translate}}
+					</ion-select-option>
+				</ion-select>
+			</ion-item>
+			<ion-item lines="none">
+				<div class="item_container">
+					<h3>{{'content_history' | translate}}</h3>
+					<h2 class="d-flex">{{'clear_history' | translate}}
+						<ion-icon class="zmdi zmdi-delete end ion-text-end"></ion-icon>
+					</h2>
+				</div>
+			</ion-item>
+
+			<ion-item lines="none" (click)="logout()">
+				<div class="item_container">
+					<h3>{{'you_re_logged_in_as' | translate}} Samantha</h3>
+					<h2 class="d-flex">{{'logout' | translate}}
+					</h2>
+				</div>
+			</ion-item>
+		</ion-list>
+
+
+		<ion-list lines="none" *ngSwitchCase="'profile'">
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'full_name' | translate}}</ion-label>
+				<ion-input value="Samantha Smith" type="name"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'email_address' | translate}}</ion-label>
+				<ion-input value="samanthasmith@mail.com" type="email"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'gender' | translate}}</ion-label>
+				<ion-select placeholder="{{'select_one' | translate}}" interface="action-sheet">
+					<ion-select-option selected value="f" selected-text> {{'female' | translate}}</ion-select-option>
+					<ion-select-option value="m"> {{'male' | translate}}</ion-select-option>
+				</ion-select>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'phone_number_optional' | translate}}</ion-label>
+				<ion-input value="+1 987 654 3210" type="name"></ion-input>
+			</ion-item>
+
+			<ion-item lines="none">
+				<ion-label position="stacked">{{'choose_language' | translate}}</ion-label>
+				<ion-input value="North America" type="name"></ion-input>
+			</ion-item>
+		</ion-list>
+	</div>
+
+	<div *ngIf="config.showBuyPromt" (click)="buyAppAction()" class="buy_this_app">
+		<h2>
+			<ion-icon class="zmdi zmdi-shopping-cart"></ion-icon>
+			{{"buy_this_app" | translate}}
+		</h2>
+	</div>
+
+</ion-content>

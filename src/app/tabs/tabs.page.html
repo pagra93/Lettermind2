@@ -1,0 +1,47 @@
+<ion-tabs>
+	<div class="played_songs">
+		<div class="song_detail d-flex">
+			<div class="seeking">
+				<div class="seeking_activated" style="width: 50%;"></div>
+			</div>
+			<div class="favorite_icon_box ion-text-center"
+				[ngClass]="favorite_icon ? 'favorite_icons active' : 'favorite_icons'" (click)="toggleFavorite_icon()">
+				<ion-icon class="zmdi zmdi-favorite-outline"></ion-icon>
+				<ion-icon class="zmdi zmdi-favorite"></ion-icon>
+			</div>
+			<div class="text_box" (click)="playsong()">
+				<h2>Last breath</h2>
+				<p>Preety Goga ft. Lesica</p>
+			</div>
+			<div class="img_and_play_btn end">
+				<div class="img_box center_img" (click)="playsong()">
+					<img src="assets/images/al1.png" class="crop_img">
+				</div>
+				<div class="paly_pause_btn">
+					<ion-icon class="zmdi zmdi-play"></ion-icon>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ion-tab-bar slot="bottom">
+		<ion-tab-button tab="home">
+			<ion-icon class="zmdi zmdi-home"></ion-icon>
+			<ion-label></ion-label>
+		</ion-tab-button>
+
+		<ion-tab-button tab="search">
+			<ion-icon class="zmdi zmdi-search"></ion-icon>
+			<ion-label></ion-label>
+		</ion-tab-button>
+
+		<ion-tab-button tab="radio">
+			<ion-icon class="zmdi zmdi-radio"></ion-icon>
+			<ion-label></ion-label>
+		</ion-tab-button>
+
+		<ion-tab-button tab="playlist">
+			<ion-icon class="zmdi zmdi-playlist-audio"></ion-icon>
+			<ion-label></ion-label>
+		</ion-tab-button>
+	</ion-tab-bar>
+</ion-tabs>

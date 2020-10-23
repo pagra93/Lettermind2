@@ -1,0 +1,276 @@
+ion-header {
+	background: var(--bg-color);
+
+	ion-toolbar {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		z-index: 999;
+
+		ion-title {
+			span {
+				ion-icon {
+					font-size: 2rem;
+					position: relative;
+					top: 8px;
+					text-align: center !important;
+				}
+			}
+		}
+	}
+
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 380px;
+		overflow: hidden;
+		background: var(--bg-color);
+		margin-bottom: 26px;
+
+		.banner_img {
+			width: 100%;
+			height: 370px;
+
+		}
+
+		.banner_details {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 0 12px;
+			z-index: 999;
+
+			.text_box {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 17px;
+
+				h2 {
+					margin: 0;
+					color: var(--white);
+					font-size: 1.65rem;
+					font-weight: 600;
+					margin-bottom: 7px;
+
+				}
+
+				p {
+					margin: 0;
+					color: var(--gray);
+					font-size: .85rem;
+					font-weight: 500;
+				}
+			}
+
+			ion-row {
+				align-items: center;
+
+				ion-col {
+					ion-icon {
+						color: var(--white);
+						margin: 0;
+						font-size: 1.5rem;
+					}
+
+					&.play_push_btn {
+						ion-icon {
+							background: var(--primary);
+							border-radius: 50%;
+							width: 65px;
+							height: 65px;
+							line-height: 65px;
+							font-size: 2.5rem;
+						}
+					}
+				}
+			}
+
+
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 49px;
+			left: 0;
+			width: 100%;
+			height: 140px;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(10, 11, 15, 1) 100%);
+		}
+
+		&::before {
+			bottom: 0;
+			background: var(--bg-color);
+			height: 50px;
+			z-index: 11;
+		}
+
+	}
+}
+
+ion-content {
+	position: relative;
+	--background: var(--dark);
+}
+
+.similar_radio {
+	border-radius: 27px 27px 0 0;
+	position: relative;
+	background: var(--dark);
+	padding-top: 34px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 11px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		border-radius: 5px;
+		width: 60px;
+		height: 6px;
+		background: var(--gray);
+		opacity: 0.3;
+		z-index: 99;
+
+	}
+
+	.container {
+		margin-bottom: 13px;
+
+		h2 {
+			margin: 0;
+			color: var(--gray);
+			font-size: 1.1rem;
+			font-weight: 400;
+			padding: 0px 20px;
+			margin-bottom: 15px;
+			opacity: .5;
+		}
+
+		.scroll_container {
+			width: 100%;
+			overflow-x: scroll;
+			white-space: nowrap;
+
+			.item_srcoll {
+				display: inline-block;
+				margin: 0 5px;
+
+				&:first-child {
+					margin-left: 20px;
+				}
+
+				&:last-child {
+					margin-right: 20px;
+				}
+			}
+
+		}
+
+		&.live_radio {
+			padding-top: 2px;
+
+			.scroll_container {
+				.item_srcoll {
+					position: relative;
+					width: 133px;
+					height: 175px;
+					overflow: hidden;
+					border-radius: 7px;
+					background: #18181a;
+
+					&::before,
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 29px;
+						left: 0;
+						width: 100%;
+						background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(24, 24, 26, 1) 100%);
+						z-index: 2;
+						height: 51px;
+
+					}
+
+					.img_box {
+						width: 133px;
+						height: 142px;
+						border-radius: 7px;
+					}
+
+					.text_box {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: auto;
+						overflow: hidden;
+						padding: 12px 12px;
+						z-index: 999;
+
+
+						h3 {
+							color: var(--white);
+							margin: 0;
+							position: relative;
+							z-index: 99;
+							font-size: 1.6rem;
+							margin-bottom: 4px;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+
+							sub {
+								font-size: .9rem;
+							}
+
+						}
+
+						h5 {
+							color: var(--white);
+							margin: 0;
+							font-size: .9rem;
+							font-weight: 400;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							letter-spacing: .2px;
+							position: relative;
+							z-index: 99;
+
+						}
+
+					}
+
+
+				}
+			}
+		}
+
+		&.banner {
+			.scroll_container {
+				.item_srcoll {
+					position: relative;
+					width: 240px;
+					height: 90px;
+					overflow: hidden;
+					border-radius: 7px;
+
+					.img_box {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+					}
+				}
+			}
+
+		}
+	}
+}

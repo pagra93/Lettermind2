@@ -1,0 +1,227 @@
+ion-header {
+	background: var(--bg-color);
+
+	ion-toolbar ion-title {
+		padding: 0 15px !important;
+
+		span {
+			ion-icon {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	ion-segment {
+		border: none !important;
+		position: relative;
+		min-height: 56px;
+
+		ion-segment-button {
+			background: none !important;
+			position: relative;
+			font-size: 1.1rem;
+			font-weight: 500;
+			color: var(--text-light) !important;
+			text-transform: unset !important;
+			letter-spacing: 0;
+			--color-checked: var(--transparent) !important;
+			text-align: justify !important;
+
+			ion-label {
+				position: relative;
+				margin-bottom: 0;
+
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0px;
+				right: 0;
+				left: 0;
+				margin: 0 auto;
+				height: 4px;
+				transition: all .3s;
+				width: 0;
+				background: var(--primary);
+				border-radius: 50px;
+			}
+
+			&.segment-button-checked {
+				color: var(--white) !important;
+
+				ion-label {
+					&.active {
+						&::before {
+							opacity: 1;
+						}
+					}
+				}
+
+				&::before {
+					width: 75px;
+					transition: all .3s;
+				}
+			}
+
+		}
+
+	}
+}
+
+.tab_container {
+	padding-top: 15px;
+
+	ion-list {
+		background: var(--transparent) !important;
+
+		ion-item {
+			margin-bottom: 18px;
+			--background: var(--transparent) !important;
+			--padding-start: 0;
+			--inner-padding-end: 0px;
+			--inner-min-height: unset !important;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			border-radius: 7px;
+
+			.item_container {
+				padding: 0 20px;
+				align-items: flex-start !important;
+
+				.img_container {
+					width: 90px;
+					min-width: 90px;
+					height: 90px;
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					border-radius: 7px;
+					margin-right: 20px;
+					position: relative;
+
+					//background: var(--dark);
+					.img_box {
+						border-radius: 7px;
+						width: calc(50% - 1px);
+						height: calc(50% - 1px);
+						margin: .5px;
+					}
+				}
+
+				.item_detail {
+					width: 100%;
+					padding-top: 5px;
+
+					h2 {
+						margin: 0;
+						color: var(--white);
+						font-weight: 500;
+						font-size: 1.1rem;
+						margin-bottom: 5px;
+					}
+
+					h5 {
+						color: var(--text-light);
+						margin: 0;
+						font-size: .84rem;
+						font-weight: 400;
+						opacity: .8;
+					}
+				}
+			}
+
+			&.create_playlist {
+				.item_container {
+					.img_container {
+						background: var(--dark);
+
+						ion-icon {
+							position: absolute;
+							left: 0;
+							right: 0;
+							width: 100%;
+							height: 100%;
+							text-align: center;
+							line-height: 90px;
+							color: var(--white);
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+
+		&.album_list {
+			ion-item {
+				.item_container {
+					.img_container {
+						display: block;
+						padding-right: 16px;
+						background: url(../../assets/images/album_bg.png) 0 0/100% 100% no-repeat;
+
+						.img_box {
+							width: 100%;
+							height: 100%;
+						}
+					}
+
+				}
+			}
+		}
+
+		&.artist_list {
+			ion-item {
+				.item_container {
+					.img_container {
+						width: 75px;
+						min-width: 75px;
+						height: 75px;
+						display: block;
+						position: relative;
+						overflow: hidden;
+						border: 1px solid var(--primary);
+
+						.img_box {
+							width: calc(100% - 5px);
+							height: calc(100% - 5px);
+							margin: auto;
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							border-radius: 7px;
+
+						}
+					}
+
+				}
+
+				&.add_new_artist {
+					.item_container {
+						align-items: center !important;
+
+						.img_container {
+							background: var(--dark);
+							border: 0;
+
+							ion-icon {
+								position: absolute;
+								left: 0;
+								right: 0;
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								line-height: 75px;
+								color: var(--white);
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,428 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>
+			<div class="app_logo">
+				<img src="assets/images/logo.png">
+			</div>
+			<span class="ion-float-end" (click)="gotoSetting()">
+				<ion-icon class="zmdi zmdi-settings ion-text-end"></ion-icon>
+			</span>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+
+	<div class="container stories">
+		<div class="scroll_container">
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st1.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Ad Sheeck</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st2.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Giva Johns</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st3.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Adelo Poles</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st4.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Riloza Viz</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st1.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Ad Sheeck</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st2.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Giva Johns</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st3.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Adelo Poles</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st4.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Riloza Viz</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st1.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Ad Sheeck</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st2.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Giva Johns</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st3.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Adelo Poles</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st4.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Riloza Viz</h5>
+			</div>
+
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st1.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Ad Sheeck</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st2.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Giva Johns</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st3.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Adelo Poles</h5>
+			</div>
+			<div class="item_srcoll" (click)="stories()">
+				<div class="img_container">
+					<div class="img_box center_img">
+						<img src="assets/images/st4.png" class="crop_img">
+					</div>
+				</div>
+				<h5>Riloza Viz</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container recently_played">
+		<h2>{{'recently_played' | translate}}</h2>
+		<div class="scroll_container">
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al1.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al2.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al3.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al4.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al5.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al6.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container how_is_your_mood">
+		<h2>{{'how_is_your_mood' | translate}}</h2>
+		<div class="scroll_container">
+			<div class="item_srcoll Party">
+				<div class="img_box center_img">
+					<img src="assets/images/m1.png" class="crop_img">
+					<h5>Party</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Romance">
+				<div class="img_box center_img">
+					<img src="assets/images/m2.png" class="crop_img">
+					<h5>Romance</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Retro">
+				<div class="img_box center_img">
+					<img src="assets/images/m3.png" class="crop_img">
+					<h5>Retro</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Rock">
+				<div class="img_box center_img">
+					<img src="assets/images/m4.png" class="crop_img">
+					<h5>Rock</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Party">
+				<div class="img_box center_img">
+					<img src="assets/images/m1.png" class="crop_img">
+					<h5>Party</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Romance">
+				<div class="img_box center_img">
+					<img src="assets/images/m2.png" class="crop_img">
+					<h5>Romance</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Retro">
+				<div class="img_box center_img">
+					<img src="assets/images/m3.png" class="crop_img">
+					<h5>Retro</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Rock">
+				<div class="img_box center_img">
+					<img src="assets/images/m4.png" class="crop_img">
+					<h5>Rock</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Party">
+				<div class="img_box center_img">
+					<img src="assets/images/m1.png" class="crop_img">
+					<h5>Party</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Romance">
+				<div class="img_box center_img">
+					<img src="assets/images/m2.png" class="crop_img">
+					<h5>Romance</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Retro">
+				<div class="img_box center_img">
+					<img src="assets/images/m3.png" class="crop_img">
+					<h5>Retro</h5>
+				</div>
+			</div>
+			<div class="item_srcoll Rock">
+				<div class="img_box center_img">
+					<img src="assets/images/m4.png" class="crop_img">
+					<h5>Rock</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container banner">
+		<div class="scroll_container">
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner1.png" class="crop_img">
+				</div>
+			</div>
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner2.png" class="crop_img">
+				</div>
+			</div>
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner1.png" class="crop_img">
+				</div>
+			</div>
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner2.png" class="crop_img">
+				</div>
+			</div>
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner1.png" class="crop_img">
+				</div>
+			</div>
+			<div class="item_srcoll" (click)="subscribe()">
+				<div class="img_box center_img">
+					<img src="assets/images/banner2.png" class="crop_img">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container recently_played">
+		<h2>{{'newly_launched' | translate}}</h2>
+		<div class="scroll_container ">
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al4.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al5.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al6.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al1.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al2.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al3.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al4.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al5.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al6.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al1.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al2.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al3.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container recently_played">
+		<h2>{{'trending_songs' | translate}}</h2>
+		<div class="scroll_container ">
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al1.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al2.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al3.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al4.png" class="crop_img">
+				</div>
+				<h5>Last breath</h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al5.png" class="crop_img">
+				</div>
+				<h5>Like we used </h5>
+			</div>
+			<div class="item_srcoll" (click)="playsong()">
+				<div class="img_box center_img">
+					<img src="assets/images/al6.png" class="crop_img">
+				</div>
+				<h5>Mine Forever</h5>
+			</div>
+		</div>
+	</div>
+<!--	<ion-spinner duration></ion-spinner>-->
+</ion-content>

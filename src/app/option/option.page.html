@@ -1,0 +1,53 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>option</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content (click)="dismiss()">
+</ion-content>
+<ion-footer no-border>
+	<div class="header" (click)="dismiss()"></div>
+	<div class="song_detail d-flex">
+		<div class="img_box center_img">
+			<img src="assets/images/song_img2.png">
+		</div>
+		<div class="text_box">
+			<h2>Love me like you do</h2>
+			<h5>Last Love | Adverd Johny</h5>
+		</div>
+	</div>
+	<div class="option_container">
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi zmdi-favorite-outline ion-text-center"></ion-icon>
+			<h2>{{'like_this_song' | translate}}</h2>
+		</div>
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi zmdi-playlist-audio ion-text-center"></ion-icon>
+			<h2>{{'remove_from_this_playlist' | translate}}</h2>
+		</div>
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi zmdi-minus-circle-outline ion-text-center"></ion-icon>
+			<h2>{{'add_to_playlist' | translate}}</h2>
+		</div>
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi zmdi-skip-next ion-text-center"></ion-icon>
+			<h2>{{'play_next' | translate}}</h2>
+		</div>
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi  zmdi-surround-sound ion-text-center"></ion-icon>
+			<h2>{{'go_to_album' | translate}}</h2>
+		</div>
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi  zmdi-account-circle ion-text-center"></ion-icon>
+			<h2>{{'view_artist' | translate}}</h2>
+		</div>	
+		
+		<div class="song_option d-flex">
+			<ion-icon class="zmdi zmdi-share ion-text-center"></ion-icon>
+			<h2>{{'share' | translate}}</h2>
+		</div>
+	</div>
+</ion-footer>

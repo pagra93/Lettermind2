@@ -1,0 +1,60 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button  text=""  icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'sign_up' | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_img">
+	<div class="banner ion-text-center">
+		<img src="assets/images/logo.png">
+	</div>
+
+	<div class="form">
+		<ion-list lines="none">
+			<ion-item lines="none" class="ion-no-padding">
+				<ion-icon class="zmdi zmdi-email ion-text-start" slot="start"></ion-icon>
+				<ion-input type="email" value="" placeholder="{{'email_address' | translate}}"></ion-input>
+			</ion-item>
+
+			<ion-item lines="none">
+				<ion-icon class="zmdi zmdi-lock ion-text-start" slot="start"></ion-icon>
+				<ion-input type="email" value="" placeholder="{{'password' | translate}}"></ion-input>
+			</ion-item>
+
+			<ion-item lines="none" class="ion-no-padding">
+				<ion-icon class="zmdi zmdi-email ion-text-start" slot="start"></ion-icon>
+				<ion-input type="email" value="" placeholder="{{'email_address' | translate}}"></ion-input>
+			</ion-item>
+
+			<ion-item lines="none">
+				<ion-icon class="zmdi zmdi-lock ion-text-start" slot="start"></ion-icon>
+				<ion-input type="email" value="" placeholder="{{'password' | translate}}"></ion-input>
+			</ion-item>
+
+			<ion-button size="large" class="btn" (click)="choose_languages()">{{'sign_up' | translate}}</ion-button>
+		</ion-list>
+
+
+		<div class="social_login">
+			<h2>{{'or_continue_with' | translate}}</h2>
+			<ion-row>
+				<ion-col size="6">
+					<ion-button class="btn fb" (click)="choose_languages()">
+						<img slot="start" src="assets/images/fb.png">
+						{{'facebook' | translate}}
+					</ion-button>
+				</ion-col>
+
+				<ion-col size="6">
+					<ion-button class="btn google" (click)="choose_languages()">
+						<img slot="start" src="assets/images/google.png">
+						{{'google' | translate}}
+					</ion-button>
+				</ion-col>
+			</ion-row>
+		</div>
+	</div>
+</ion-content>
